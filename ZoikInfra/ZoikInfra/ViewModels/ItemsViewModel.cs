@@ -21,7 +21,7 @@ namespace ZoikInfra.ViewModels
 
         public ItemsViewModel()
         {
-            Title = "Browse";
+            Title = "Pool";
             Items = new ObservableCollection<Item>();
             LoadItemsCommand = new Command(async () => await ExecuteLoadItemsCommand());
 

@@ -1,0 +1,99 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentView xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ZoikInfra.Views.PoolCardViewTemplate">
+    <ContentView.Content>
+        <Frame IsClippedToBounds="True"  
+           HasShadow="True"  
+           Padding="0"  
+           BackgroundColor="White" >
+            <Frame.OutlineColor>
+                <OnPlatform x:TypeArguments="Color"  
+                    Android="Gray"  
+                    iOS="Gray"/>
+            </Frame.OutlineColor>
+            <Frame.Margin>
+                <OnPlatform x:TypeArguments="Thickness"  
+                     Android="10"  
+                     iOS="10"/>
+            </Frame.Margin>
+            <StackLayout Orientation="Horizontal">
+                <BoxView Color="{Binding IsDeleted}" WidthRequest="4"/>
+                <Grid VerticalOptions="CenterAndExpand"  
+                 Padding="0"  
+                 HorizontalOptions="FillAndExpand"  
+                 BackgroundColor="Transparent">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"></ColumnDefinition>
+                        <ColumnDefinition Width="*"></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+                    
+                    <Label Grid.Row="0" Grid.Column="0"
+                           HorizontalTextAlignment="Start"  
+                           VerticalTextAlignment="Center" 
+                           FontAttributes="Bold,Italic"
+                           FontSize="12"  
+                           Text="Property Name " />
+                    
+                    <Label FontAttributes="Italic"  
+                   Grid.Row="0" Grid.Column="1" 
+                   HorizontalTextAlignment="Start"  
+                   VerticalTextAlignment="Center"  
+                   FontSize="12"  
+                   Text="{Binding PropertyName, Mode = TwoWay}">
+                        
+                    </Label>
+                    
+                    <Label Grid.Row="1" Grid.Column="0"
+                           HorizontalTextAlignment="Start"  
+                           VerticalTextAlignment="Center"  
+                           FontSize="12"
+                           FontAttributes="Bold,Italic"
+                           Text="Customer Name" />
+                    
+                    <Label FontAttributes="Italic"  
+                   Grid.Row="1" Grid.Column="1"
+                   HorizontalTextAlignment="Start"  
+                   VerticalTextAlignment="Center"  
+                   FontSize="12"  
+                   Text="{Binding CustomerName, Mode = TwoWay}">
+                        
+                    </Label>
+                    
+                    <Label Grid.Row="2" 
+                           Grid.Column="0" 
+                           HorizontalTextAlignment="Start"  
+                           VerticalTextAlignment="Center"  
+                           FontSize="12"
+                           FontAttributes="Bold,Italic"
+                           Text="Visit Date:" />
+                    
+                    <Label FontAttributes="Italic"  
+                           Grid.Row="2" Grid.Column="1"
+                           HorizontalTextAlignment="Start"  
+                   VerticalTextAlignment="Center"  
+                   FontSize="12"  
+                   Text="{Binding VisitDate, Mode = TwoWay}">
+                        <Label.LineBreakMode>
+                            <OnPlatform x:TypeArguments="LineBreakMode"  
+                          Android="NoWrap"  
+                          iOS="TailTruncation"/>
+                        </Label.LineBreakMode>
+                    </Label>
+                    <Button 
+                        Grid.Row="3" 
+                        HorizontalOptions="FillAndExpand"
+                        Padding="0"
+                        FontSize="12" 
+                        BackgroundColor="DarkGreen" 
+                        Text="Accept"/>
+                </Grid>
+            </StackLayout>
+        </Frame>
+    </ContentView.Content>
+</ContentView>

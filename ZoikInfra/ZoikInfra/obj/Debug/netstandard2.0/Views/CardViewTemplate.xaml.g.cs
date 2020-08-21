@@ -8,17 +8,17 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: global::Xamarin.Forms.Xaml.XamlResourceIdAttribute("ZoikInfra.Views.CadViewTemplate.xaml", "Views/CadViewTemplate.xaml", typeof(global::ZoikInfra.Views.CadViewTemplate))]
+[assembly: global::Xamarin.Forms.Xaml.XamlResourceIdAttribute("ZoikInfra.Views.CardViewTemplate.xaml", "Views/CardViewTemplate.xaml", typeof(global::ZoikInfra.Views.CardViewTemplate))]
 
 namespace ZoikInfra.Views {
     
     
-    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("Views\\CadViewTemplate.xaml")]
-    public partial class CadViewTemplate : global::Xamarin.Forms.ContentView {
+    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("Views\\CardViewTemplate.xaml")]
+    public partial class CardViewTemplate : global::Xamarin.Forms.ContentView {
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
         private void InitializeComponent() {
-            global::Xamarin.Forms.Xaml.Extensions.LoadFromXaml(this, typeof(CadViewTemplate));
+            global::Xamarin.Forms.Xaml.Extensions.LoadFromXaml(this, typeof(CardViewTemplate));
         }
     }
 }

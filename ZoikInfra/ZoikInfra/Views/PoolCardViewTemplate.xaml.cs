@@ -10,9 +10,9 @@ using Xamarin.Forms.Xaml;
 namespace ZoikInfra.Views
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class CadViewTemplate : ContentView
+    public partial class PoolCardViewTemplate : ContentView
     {
-        public CadViewTemplate()
+        public PoolCardViewTemplate()
         {
             InitializeComponent();
         }

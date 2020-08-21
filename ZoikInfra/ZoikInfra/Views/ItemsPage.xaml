@@ -17,7 +17,7 @@
     <RefreshView x:DataType="local:ItemsViewModel" Command="{Binding LoadItemsCommand}" IsRefreshing="{Binding IsBusy, Mode=TwoWay}">
 
         <StackLayout Orientation="Vertical">
-            <Label Text="CardView Demo in Xamarin Forms"  
+            <Label Text="Pool"  
                FontAttributes="Bold"  
                FontSize="Medium"  
                VerticalOptions="Start"  
@@ -32,7 +32,7 @@
                 <ListView.ItemTemplate>
                     <DataTemplate>
                         <ViewCell>
-                            <local1:CadViewTemplate/>
+                            <local1:PoolCardViewTemplate/>
                         </ViewCell>
                     </DataTemplate>
                 </ListView.ItemTemplate>
