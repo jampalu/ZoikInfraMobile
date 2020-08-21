@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "4yMWJ9Yg26ZvRGhpo2aMAnkAV4O4h0ZU+ft2lza5UKVhK8afhLsg18KlXhOiN+DDD4s+jsnPAPscrtlA+i2AOA==",
+  "success": true,
+  "projectFilePath": "D:\\Uday_Files\\Jerry_Project\\Novelski Web Portal\\ZoikInfra\\ZoikInfra.iOS\\ZoikInfra.iOS.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\jampalu\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512",
+    "C:\\Microsoft\\Xamarin\\NuGet\\xamarin.essentials\\1.5.3.2\\xamarin.essentials.1.5.3.2.nupkg.sha512",
+    "C:\\Microsoft\\Xamarin\\NuGet\\xamarin.forms\\4.6.0.1141\\xamarin.forms.4.6.0.1141.nupkg.sha512"
+  ],
+  "logs": []
+}
